@@ -28,6 +28,11 @@
 3. 回忆阶段：被试在 1.5 分钟内进行自由回忆
 4. 循环与休息：每完成 5 个列表强制休息 30 秒
 <img width="800" height="450" alt="ezgif-374a76a8c62274fa" src="https://github.com/user-attachments/assets/c09559c9-320e-4cb3-8b58-a691ad47781a" />
+<img width="1176" height="598" alt="image" src="https://github.com/user-attachments/assets/474f3f59-af26-4773-8e85-6e025d25a886" />
+<img width="1188" height="573" alt="image" src="https://github.com/user-attachments/assets/5e04a17c-c3f0-4545-bcc9-039500fa4ddf" />
+<img width="585" height="544" alt="image" src="https://github.com/user-attachments/assets/ca04d236-8a44-481d-91e8-245af3a24dbb" />
+<img width="596" height="542" alt="image" src="https://github.com/user-attachments/assets/929a8f74-9681-45e8-95c5-6f22232f26a8" />
+
 
 ## 实验结果
 
