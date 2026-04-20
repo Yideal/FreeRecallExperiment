@@ -27,6 +27,7 @@
 2. 列表呈现阶段：按设定速率依次呈现单词
 3. 回忆阶段：被试在 1.5 分钟内进行自由回忆
 4. 循环与休息：每完成 5 个列表强制休息 30 秒
+<img width="800" height="450" alt="ezgif-374a76a8c62274fa" src="https://github.com/user-attachments/assets/c09559c9-320e-4cb3-8b58-a691ad47781a" />
 
 ## 实验结果
 
