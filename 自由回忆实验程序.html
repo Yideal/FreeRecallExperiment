@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自由回忆系列位置效应实验</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .experiment-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .instructions {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .word-display {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #333;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .controls {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .start-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .start-btn:hover {
+            background-color: #45a049;
+        }
+        .next-btn {
+            background-color: #2196F3;
+            color: white;
+        }
+        .next-btn:hover {
+            background-color: #0b7dda;
+        }
+        .recall-area {
+            margin: 20px 0;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        .results {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+        .settings {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        select, input {
+            padding: 8px;
+            font-size: 14px;
+            margin: 5px;
+        }
+        .timer {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+            color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>自由回忆系列位置效应实验</h1>
+        
+        <div class="instructions">
+            <h2>实验说明</h2>
+            <p>本实验旨在复现Murdock (1962)的自由回忆系列位置效应实验。实验过程中，您将看到一系列单词依次呈现，请尽量记住它们。每个列表结束后，您有1分30秒的时间写下您记得的所有单词，可以按照任何顺序回忆。</p>
+        </div>
+        
+        <div class="settings">
+            <h3>实验设置</h3>
+            <label for="list-type">选择列表类型：</label>
+            <select id="list-type">
+                <option value="10-2">10词，2秒/词（总时间20秒）</option>
+                <option value="20-1">20词，1秒/词（总时间20秒）</option>
+                <option value="15-2">15词，2秒/词（总时间30秒）</option>
+                <option value="30-1">30词，1秒/词（总时间30秒）</option>
+                <option value="20-2">20词，2秒/词（总时间40秒）</option>
+                <option value="40-1">40词，1秒/词（总时间40秒）</option>
+            </select>
+            <br>
+            <label for="subject-id">被试编号：</label>
+            <input type="text" id="subject-id" placeholder="请输入被试编号">
+        </div>
+        
+        <div class="controls">
+            <button class="start-btn" onclick="startExperiment()">开始实验</button>
+        </div>
+        
+        <div id="countdown" class="word-display hidden">
+            3<br>2<br>1
+        </div>
+        
+        <div id="word-display" class="word-display hidden">
+            单词将在这里显示
+        </div>
+        
+        <div class="timer hidden" id="recall-timer">
+            1:30
+        </div>
+        
+        <div id="recall-section" class="recall-area hidden">
+            <h3>请回忆并输入刚才看到的单词（按任意顺序）：</h3>
+            <textarea id="recall-input" placeholder="请输入您记得的单词，每个单词一行"></textarea>
+            <br>
+            <button class="next-btn" onclick="submitRecall()">提交回忆</button>
+        </div>
+        
+        <div id="results" class="results hidden">
+            <h3>实验结果</h3>
+            <div id="results-content"></div>
+            <button class="start-btn" onclick="resetExperiment()">重新开始</button>
+        </div>
+    </div>
+    
+    <script>
+        // 实验材料 - 汉语双字词列表
+        const wordLists = {
+            "10-2": ["逻辑", "塑料", "挂钩", "信号", "纸张", "深度", "毛巾", "范围", "零件", "铁塔"],
+            "20-1": ["苹果", "桌子", "河流", "天空", "学校", "森林", "电话", "雨伞", "书本", "面包", "火车", "石头", "窗户", "月亮", "牙齿", "杯子", "钱包", "道路", "灯光", "村庄"],
+            "15-2": ["窗帘", "步骤", "磁铁", "频道", "牙刷", "程度", "招牌", "煤炭", "影子", "油漆", "键盘", "仓库", "纤维", "日历", "角度"],
+            "30-1": ["板凳", "枕头", "抽屉", "手套", "楼梯", "树枝", "门票", "毛巾", "信封", "镜子", "纽扣", "花瓶", "锁头", "钉子", "篮子", "药丸", "粉笔", "瓦片", "绳子", "锅盖", "水缸", "扫帚", "炉子", "漏斗", "木桶", "秤杆", "风车", "草帽", "竹竿", "铁锅"],
+            "20-2": ["水泥", "衬衫", "浓度", "皮带", "附件", "符号", "围巾", "木材", "罐头", "重量", "气候", "瓶盖", "纸箱", "玻璃", "楼梯", "线索", "功能", "效率", "层面", "比例"],
+            "40-1": ["牙刷", "逻辑", "零件", "窗帘", "磁铁", "信号", "楼梯", "塑料", "浓度", "影子", "仓库", "皮带", "纸张", "角度", "衬衫", "木材", "符号", "程度", "键盘", "围巾", "气候", "挂钩", "频道", "水泥", "煤炭", "附件", "步骤", "深度", "招牌", "罐头", "油漆", "日历", "纸箱", "纤维", "重量", "瓶盖", "铁塔", "玻璃", "毛巾", "范围"]
+        };
+        
+        let currentList = [];
+        let currentIndex = 0;
+        let presentationRate = 1;
+        let recallTimer = null;
+        let recallTimeLeft = 90; // 1分30秒
+        let subjectId = "";
+        let listType = "";
+        
+        function startExperiment() {
+            // 获取设置
+            listType = document.getElementById("list-type").value;
+            subjectId = document.getElementById("subject-id").value || "匿名";
+            
+            // 设置呈现速率
+            presentationRate = parseInt(listType.split("-")[1]);
+            
+            // 随机打乱单词顺序
+            currentList = [...wordLists[listType]].sort(() => Math.random() - 0.5);
+            currentIndex = 0;
+            
+            // 隐藏设置和开始按钮
+            document.querySelector(".settings").classList.add("hidden");
+            document.querySelector(".start-btn").classList.add("hidden");
+            
+            // 显示倒计时
+            document.getElementById("countdown").classList.remove("hidden");
+            
+            // 3秒倒计时后开始呈现单词
+            setTimeout(() => {
+                document.getElementById("countdown").classList.add("hidden");
+                document.getElementById("word-display").classList.remove("hidden");
+                showNextWord();
+            }, 3000);
+        }
+        
+        function showNextWord() {
+            if (currentIndex < currentList.length) {
+                document.getElementById("word-display").textContent = currentList[currentIndex];
+                currentIndex++;
+                
+                // 按设定速率显示下一个单词
+                setTimeout(showNextWord, presentationRate * 1000);
+            } else {
+                // 呈现完毕，进入回忆阶段
+                document.getElementById("word-display").classList.add("hidden");
+                document.getElementById("recall-section").classList.remove("hidden");
+                document.getElementById("recall-timer").classList.remove("hidden");
+                
+                // 开始回忆计时
+                startRecallTimer();
+            }
+        }
+        
+        function startRecallTimer() {
+            recallTimeLeft = 90;
+            updateRecallTimer();
+            
+            recallTimer = setInterval(() => {
+                recallTimeLeft--;
+                updateRecallTimer();
+                
+                if (recallTimeLeft <= 0) {
+                    clearInterval(recallTimer);
+                    submitRecall();
+                }
+            }, 1000);
+        }
+        
+        function updateRecallTimer() {
+            const minutes = Math.floor(recallTimeLeft / 60);
+            const seconds = recallTimeLeft % 60;
+            document.getElementById("recall-timer").textContent = 
+                `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        function submitRecall() {
+            // 清除计时器
+            if (recallTimer) {
+                clearInterval(recallTimer);
+            }
+            
+            // 获取回忆内容
+            const recallInput = document.getElementById("recall-input").value;
+            const recalledWords = recallInput.split('\n')
+                .map(word => word.trim())
+                .filter(word => word !== '');
+            
+            // 计算回忆结果
+            const correctRecalls = [];
+            const incorrectRecalls = [];
+            
+            recalledWords.forEach(word => {
+                if (currentList.includes(word)) {
+                    correctRecalls.push(word);
+                } else {
+                    incorrectRecalls.push(word);
+                }
+            });
+            
+            // 计算系列位置效应
+            const serialPositionData = currentList.map((word, index) => {
+                return {
+                    position: index + 1,
+                    word: word,
+                    recalled: correctRecalls.includes(word)
+                };
+            });
+            
+            // 显示结果
+            const resultsContent = document.getElementById("results-content");
+            resultsContent.innerHTML = `
+                <p><strong>被试编号：</strong>${subjectId}</p>
+                <p><strong>列表类型：</strong>${listType}（${currentList.length}词，${presentationRate}秒/词）</p>
+                <p><strong>正确回忆：</strong>${correctRecalls.length}个单词</p>
+                <p><strong>正确回忆的单词：</strong>${correctRecalls.join(', ')}</p>
+                <p><strong>错误回忆：</strong>${incorrectRecalls.length}个单词</p>
+                <p><strong>错误回忆的单词：</strong>${incorrectRecalls.join(', ')}</p>
+                <h4>系列位置数据：</h4>
+                <table border="1" style="width:100%; border-collapse:collapse;">
+                    <tr>
+                        <th>位置</th>
+                        <th>单词</th>
+                        <th>是否回忆</th>
+                    </tr>
+                    ${serialPositionData.map(item => `
+                        <tr>
+                            <td>${item.position}</td>
+                            <td>${item.word}</td>
+                            <td>${item.recalled ? '是' : '否'}</td>
+                        </tr>
+                    `).join('')}
+                </table>
+                <h4>系列位置效应：</h4>
+                <div id="serial-position-chart" style="width:100%; height:400px;"></div>
+            `;
+            
+            // 显示结果
+            document.getElementById("recall-section").classList.add("hidden");
+            document.getElementById("recall-timer").classList.add("hidden");
+            document.getElementById("results").classList.remove("hidden");
+            
+            // 绘制系列位置曲线
+            drawSerialPositionChart(serialPositionData);
+        }
+        
+        function drawSerialPositionChart(data) {
+            // 简单的图表绘制
+            const canvas = document.createElement('canvas');
+            canvas.width = 700;
+            canvas.height = 300;
+            document.getElementById('serial-position-chart').appendChild(canvas);
+            
+            const ctx = canvas.getContext('2d');
+            
+            // 绘制坐标轴
+            ctx.beginPath();
+            ctx.moveTo(50, 250);
+            ctx.lineTo(650, 250);
+            ctx.lineTo(645, 245);
+            ctx.moveTo(650, 250);
+            ctx.lineTo(645, 255);
+            ctx.moveTo(50, 250);
+            ctx.lineTo(50, 50);
+            ctx.lineTo(45, 55);
+            ctx.moveTo(50, 50);
+            ctx.lineTo(55, 55);
+            ctx.stroke();
+            
+            // 绘制数据点和连线
+            ctx.beginPath();
+            data.forEach((item, index) => {
+                const x = 50 + (index / (data.length - 1)) * 600;
+                const y = 250 - (item.recalled ? 200 : 0);
+                
+                if (index === 0) {
+                    ctx.moveTo(x, y);
+                } else {
+                    ctx.lineTo(x, y);
+                }
+                
+                // 绘制数据点
+                ctx.beginPath();
+                ctx.arc(x, y, 5, 0, 2 * Math.PI);
+                ctx.fillStyle = item.recalled ? 'green' : 'red';
+                ctx.fill();
+                ctx.stroke();
+            });
+            
+            // 添加标签
+            ctx.font = '12px Arial';
+            ctx.fillStyle = 'black';
+            ctx.fillText('系列位置', 350, 290);
+            ctx.save();
+            ctx.translate(20, 150);
+            ctx.rotate(-Math.PI / 2);
+            ctx.fillText('回忆成功', 0, 0);
+            ctx.restore();
+        }
+        
+        function resetExperiment() {
+            // 重置所有状态
+            currentList = [];
+            currentIndex = 0;
+            presentationRate = 1;
+            
+            // 隐藏结果，显示设置和开始按钮
+            document.getElementById("results").classList.add("hidden");
+            document.querySelector(".settings").classList.remove("hidden");
+            document.querySelector(".start-btn").classList.remove("hidden");
+            
+            // 清空输入
+            document.getElementById("recall-input").value = "";
+        }
+    </script>
+</body>
+</html>

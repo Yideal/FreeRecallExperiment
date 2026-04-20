@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+    <Author>实验团队</Author>
+    <LastAuthor>实验团队</LastAuthor>
+    <Created>2026-04-20T15:30:00Z</Created>
+    <LastSaved>2026-04-20T15:30:00Z</LastSaved>
+    <Title>自由回忆系列位置效应实验模拟数据</Title>
+  </DocumentProperties>
+  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+    <AllowPNG/>
+  </OfficeDocumentSettings>
+  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+    <WindowHeight>10000</WindowHeight>
+    <WindowWidth>10000</WindowWidth>
+    <WindowTopX>100</WindowTopX>
+    <WindowTopY>100</WindowTopY>
+    <ProtectStructure>False</ProtectStructure>
+    <ProtectWindows>False</ProtectWindows>
+  </ExcelWorkbook>
+  <Styles>
+    <Style ss:ID="Default" ss:Name="Normal">
+      <Alignment ss:Vertical="Bottom"/>
+      <Borders/>
+      <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+      <Interior/>
+      <NumberFormat/>
+      <Protection/>
+    </Style>
+    <Style ss:ID="Header">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2" ss:Color="#000000"/>
+      </Borders>
+      <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
+    </Style>
+    <Style ss:ID="Data">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+      <Borders>
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#CCCCCC"/>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#CCCCCC"/>
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#CCCCCC"/>
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#CCCCCC"/>
+      </Borders>
+      <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+    </Style>
+  </Styles>
+  <Worksheet ss:Name="10-2组">
+    <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="11" x:FullColumns="1" x:FullRows="1">
+      <Row ss:Height="30">
+        <Cell ss:StyleID="Header"><Data ss:Type="String">系列位置</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">回忆概率</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">1</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.78</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">2</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.65</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">3</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.52</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">4</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.38</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">5</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.30</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">6</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.25</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">7</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.28</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">8</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.35</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">9</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.45</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">10</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.68</Data></Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+  <Worksheet ss:Name="20-1组">
+    <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="21" x:FullColumns="1" x:FullRows="1">
+      <Row ss:Height="30">
+        <Cell ss:StyleID="Header"><Data ss:Type="String">系列位置</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">回忆概率</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">1</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.75</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">2</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.62</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">3</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.48</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">4</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.35</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">5</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.28</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">6</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.22</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">7</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.20</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">8</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.18</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">9</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.17</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">10</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.16</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">11</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.15</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">12</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.16</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">13</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.17</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">14</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.19</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">15</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.22</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">16</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.26</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">17</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.32</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">18</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.40</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">19</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.52</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">20</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.65</Data></Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+  <Worksheet ss:Name="15-2组">
+    <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="16" x:FullColumns="1" x:FullRows="1">
+      <Row ss:Height="30">
+        <Cell ss:StyleID="Header"><Data ss:Type="String">系列位置</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">回忆概率</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">1</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.80</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">2</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.68</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">3</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.55</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">4</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.42</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">5</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.32</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">6</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.25</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">7</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.22</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">8</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.20</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">9</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.21</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">10</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.23</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">11</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.26</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">12</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.31</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">13</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.38</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">14</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.48</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">15</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.62</Data></Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+  <Worksheet ss:Name="30-1组">
+    <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="31" x:FullColumns="1" x:FullRows="1">
+      <Row ss:Height="30">
+        <Cell ss:StyleID="Header"><Data ss:Type="String">系列位置</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">回忆概率</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">1</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.76</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">2</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.63</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">3</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.50</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">4</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.38</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">5</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.30</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">6</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.24</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">7</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.20</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">8</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.18</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">9</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.16</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">10</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.15</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">11</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.14</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">12</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.13</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">13</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.14</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">14</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.13</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">15</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.14</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">16</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.15</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">17</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.14</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">18</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.15</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">19</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.16</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">20</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.17</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">21</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.18</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">22</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.20</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">23</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.22</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">24</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.25</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">25</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.29</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">26</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.34</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">27</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.41</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">28</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.49</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">29</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.58</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">30</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.68</Data></Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+  <Worksheet ss:Name="20-2组">
+    <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="21" x:FullColumns="1" x:FullRows="1">
+      <Row ss:Height="30">
+        <Cell ss:StyleID="Header"><Data ss:Type="String">系列位置</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">回忆概率</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">1</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.82</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">2</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.70</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">3</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.58</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">4</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.45</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">5</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.35</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">6</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.28</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">7</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.24</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">8</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.22</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">9</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.21</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">10</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.20</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">11</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.21</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">12</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.22</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">13</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.24</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">14</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.27</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">15</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.31</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">16</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.36</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">17</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.43</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">18</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.52</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">19</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.61</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">20</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.72</Data></Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+  <Worksheet ss:Name="40-1组">
+    <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="41" x:FullColumns="1" x:FullRows="1">
+      <Row ss:Height="30">
+        <Cell ss:StyleID="Header"><Data ss:Type="String">系列位置</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">回忆概率</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">1</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.634</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">2</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.505</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">3</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.411</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">4</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.341</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">5</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.281</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">6</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.244</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">7</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.227</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">8</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.218</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">9</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.212</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">10</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.209</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">11</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.214</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">12</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.206</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">13</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.202</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">14</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.198</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">15</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.204</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">16</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.195</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">17</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.191</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">18</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.193</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">19</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.198</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">20</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.194</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">21</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.196</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">22</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.192</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">23</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.189</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">24</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.194</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">25</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.191</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">26</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.198</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">27</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.203</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">28</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.196</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">29</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.192</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">30</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.197</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">31</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.201</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">32</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.206</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">33</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.218</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">34</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.241</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">35</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.272</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">36</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.315</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">37</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.372</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">38</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.451</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">39</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.556</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">40</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.722</Data></Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+  <Worksheet ss:Name="总回忆量">
+    <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="7" x:FullColumns="1" x:FullRows="1">
+      <Row ss:Height="30">
+        <Cell ss:StyleID="Header"><Data ss:Type="String">总时间类别</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">组别</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">列表长度</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">呈现速率</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">总时间(秒)</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">平均回忆数</Data></Cell>
+        <Cell ss:StyleID="Header"><Data ss:Type="String">标准差</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">第一类</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">10-2</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">10</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">2秒/词</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">20</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">6.42</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.82</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">第一类</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">20-1</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">20</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">1秒/词</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">20</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">6.35</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">0.91</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">第二类</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">15-2</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">15</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">2秒/词</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">30</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">8.11</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">1.05</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">第二类</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">30-1</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">30</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">1秒/词</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">30</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">7.98</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">1.18</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">第三类</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">20-2</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">20</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">2秒/词</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">40</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">8.74</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">1.21</Data></Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">第三类</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">40-1</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">40</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="String">1秒/词</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">40</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">8.58</Data></Cell>
+        <Cell ss:StyleID="Data"><Data ss:Type="Number">1.35</Data></Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+</Workbook>
